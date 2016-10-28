@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {color: #888; margin: auto !important;}
+.clearfix {clear:both;}
+
+* {box-sizing: border-box;}
+
+/*#container {width:90%; margin:auto; background:#ECE0CD;}*/
+#container {width:90%; margin:auto; background:#FFFFFF;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif !important;}
+h2, h3, h4, h5, h6 {margin-top: 10px !important;}
+h2 {font-family: 'Lobster', san-serif !important; font-size: 64px !important;}
+h4 {font-size:16px !important; font-weight: 700 !important;}
+p {font-family: 'Raleway', sans-serif;}
+a {text-decoration: none; color:#202020; font-family: 'Quicksand', sans-serif !important; font-weight:300;}
+
+/*header items*/
+/*#header {height: 282px; background:#CBBFA8; width:100%; padding-top: 10px;}*/
+#header {height: 300px; background:#FFFFFF; width:100%; padding-top: 10px;}
+#logo {width:20%; margin: auto;margin-bottom:10px; max-width: 220px;}
+#navigation {display: block; margin: auto; background:#FFFFFF; height: 60px; line-height: 60px; width: 100%; margin-bottom:0;}
+#navigation li {display: block; float: left; width: 16%; font-size:18px;}
+#navigation a, #footer a {text-decoration:none; color:grey;}
+#navigation a:hover, #footer a:hover {text-decoration:none; color:lightseagreen;}
+
+/*quarter screen width divs*/
+/*store locator, subscribe, search, social media posts*/
+#main {margin-top: 20px;}
+.quarter-left, .quarter-right {width:24%;float:left;margin:1%;}
+#store, #subscribe {padding-left: 10px; padding-right: 10px; padding-top: 5px; height:245px;}
+#store {background-image: url(../img/map.jpg); background-size: 100%; background-repeat: no-repeat; margin-bottom: 10px;height: 225px;}
+#subscribe {background:#F4AB3E ; height: 150px;}
+.search {padding:15px; background: #F6EDAC;}
+.media {height:430px; background: #71B9A6; padding:10px;}
+.post {background: #98D2C3; height: 25%; padding: 5px; border: solid white 1px;}
+
+/*half screen width div*/
+/*#half {float:left; display:block; background: green; width:48%; height:500px; margin-top: 1%; margin-bottom:1%;}*/
+#half {float:left; display:block; background-image: url(../img/ice_cream.jpg); background-size:100% ; background-repeat:no-repeat; width:48%; height:500px; margin-top: 1%; margin-bottom:1%; color: white;}
+#half img {max-width: 100%; height: auto;}
+
+/*third screen width divs*/
+.third {clear:both; width:100%; border-top: solid #BBA181 2px;}
+.thirddiv {height: 400px; width:32%; float:left; margin-top: 2%; margin-left:1%; margin-bottom: 12%;}
+.thirddiv h2 {font-family: 'Lobster', san-serif; font-size: 36px !important;}
+.letter {margin:0 auto;height: 70%; background-image: url(../img/letter.png); background-size: 100%; background-repeat:no-repeat; max-width: 310px;}
+.delivery {margin:0 auto;height: 70%; background-image: url(../img/delivery.png); background-size: 100%; background-repeat:no-repeat; max-width: 310px;}
+.faq {margin:0 auto; height: 70%; background-image: url(../img/faq.png); background-size: 100%; background-repeat:no-repeat; max-width: 310px;}
+
+/*footer*/
+#footer {width: 100%; clear:both; border-top: solid #BBA181 1px;}
+#footer ul {width: 50%; clear:both; margin:0 auto;}
+#footer ul li {background:#FFFFFF; float: left; height:150px; width: 25%; padding-top:60px;}
+
+.error {
+	height:300px;
+}
+
+@media only screen and (min-width:769px) {
+    #container {
+        margin:auto;
+        max-width: 1280px;
+        min-width:768px;
+    }
+
+    #logo {
+        background-image: url('../img/logo_big.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: block;
+        width: 20%;
+        min-width:210px;
+        padding-top: 20px;
+        text-indent: -9999px;
+
+        height:220px;
+        background-position-y: 20px;
+    }
+
+    button.menu {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /*hamburger menu icon*/
+    .ham {
+        display:none;
+    }
+}
+
+/* Tablet Layout: 415px to 768px. */
+@media screen and (min-width:415px)and (max-width:768px) {
+    #container, body {
+        width: 95%;
+    }
+
+    #header {
+        height: 125px;
+    }
+
+    #logo, h1#logo {
+        background-image: url('../img/logo_med.png');
+        background-size: 100%;
+        font-size:2px;
+        min-width:110px;
+        max-width: 120px;
+        background-repeat: no-repeat;
+        padding-top: 30%;
+        text-indent: -9999px;
+
+        background-position-y: 0px;
+    }
+
+    /*navigation specs*/
+    #navigation {
+        display:none;
+    }
+    .navbar-toggle {
+        min-width: 30px;
+        max-width:11%;
+        float: left !important;
+        margin-left: 20px;
+        z-index: 1;
+        min-height: 50%;
+        line-height: 70%;
+        margin-bottom:0px;
+    }
+    .btn-default:hover, .btn-default.focus, .btn-default:focus {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    .ham {
+        min-width: 30px;
+        width: 100%;
+        float: left;
+    }
+    /*end nav*/
+
+    .search {
+        display:none;
+    }
+    /*
+    #half {
+        z-index:1;
+        float: left;
+        position: absolute;
+        width:58%;
+        height:380px;
+    }
+    .quarter {
+        clear:both;
+        width: 30%;
+        padding:0;
+    }
+    #subscribe {
+        position:relative;
+        top: 100px;
+        margin: 0 auto;
+        padding-right: 0;
+        width:100%;
+    }
+    #store {
+        position:relative;
+        top: 335px;
+            left: 200px;
+        margin: 0 auto;
+        padding-right: 0;
+        width:100%;
+    }
+    .media {
+        z-index:1;
+        float: right;
+        position:absolute;
+        right:0;
+        margin-right:5%;
+        margin-top:0px;
+        width:30%;
+    }
+    */
+    
+    #half {
+        width:73%;
+        height:400px;
+    }
+    #half img {
+        height:100%;
+    }
+    
+    .quarter-left {
+        width:25%;
+    }
+    #store, #subscribe {
+        width: 100%;
+        height: 195px;
+    }
+    #store input, #subscribe input {
+        width:80%;
+    }
+    #store h3, #subscribe h3{
+        font-size: 17px;
+    }
+    
+    .quarter-right {
+        width:100%;
+        float:left;
+    }
+    .media {
+        height:400px;
+    }
+
+    .search-icon {
+        min-width:30px;
+        width:25%;
+        float: right;
+        margin-right: 10%;
+        position: absolute;
+        right: 0;
+        top:0;
+        margin-top: 5.5%;
+    }
+    
+    .thirddiv {
+        height:240px;
+        margin-bottom: 140px;
+    }
+    .thirddiv h2 {
+        font-size:24px !important;
+    }
+    .thirddiv h3 {
+        font-size:18px !important;
+    }
+    .letter, .delivery, .faq {
+        height: 84%;
+    }
+    
+    #footer ul {
+        width: 100%;
+        
+    }
+}
+
+/* Mobile Layout: 414px and below. */
+@media only screen and (max-width: 414px) {
+    .half, .third, .third div, #half, .quarter-right, .quarter-left, #container, body {
+        min-width: 320px;
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    #menu {
+        float: left !important;
+        margin-right: 0 !important;
+    }
+
+    #header {
+        padding-bottom: 2%;
+        height: 90px;
+    }
+
+    h1#logo {
+        background-image: url('../img/logo_sma.png');
+        background-size: 100%;
+        width:20%;
+        min-width:20px;
+        max-width: 60px;
+        background-repeat: no-repeat;
+        padding-top: 20%;
+        margin-top:1%;
+        text-indent: -9999px;
+
+        height:10px;
+
+        /*margin-left: 20%;*/
+        float:left;
+    }
+
+    #navigation, .search {
+        display: none;
+    }
+
+    .media {
+        margin-bottom: 2%;
+    }
+
+    #subscribe, #store {
+        margin-bottom: 2%;
+        padding-bottom: 10%;
+        height: 100%;
+    }
+
+    #store {
+        margin-top: 2%;
+    }
+
+    #half {
+        max-height: 414px;
+    }
+
+    #half h2{
+        padding-top: 10%;
+        margin-top: 0;
+    }
+
+    div.media {
+        margin-top:2%;
+    }
+    
+    .third {
+        margin-top:50px;
+        border:none;
+    }
+    
+    .thirddiv div {
+        margin:0 auto;
+    }
+    
+    .letter, .delivery, .faq {
+        height:290px;
+    }
+    
+    /*footer specs*/
+    #footer {
+        height:170px;
+        padding-top:30px;
+        margin-top:40px;
+    }
+    #footer ul {
+        width:100%;
+    }
+    #footer ul li {
+        width:100%;
+        height:25px;
+        line-height:25px;
+        clear:both;
+        padding:0;
+    }
+    /*end footer specs*/
+
+    .search-icon {
+        min-width:10px;
+        width:31%;
+        float: right;
+        margin-right: 5%;
+
+        top:0;
+        right:0;
+        margin-top: 4.25%;
+    }
+
+    /*attempted mobile hamburger menu*/
+
+    .ham {
+        margin-top: 8%;
+        width: 100%;
+        float: left;
+    }
+
+    .navbar-toggle {
+        width: 15%;
+        height: auto;
+        float: left !important;
+        margin-left: 15px;
+        z-index: 1;
+            min-height:  50%;
+        line-height: 70%;
+    }
+    .glyphicon {
+        margin-top:50%;
+      line-height: 70%;
+    }
+    .btn-default:hover, .btn-default.focus, .btn-default:focus {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+}
