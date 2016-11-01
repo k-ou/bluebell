@@ -3,19 +3,22 @@
 <html>
 <head>
 <title>Blue Bell Creameries</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 <meta name="Description" content="The official site of Blue Bell Ice Cream." />
 <meta name="keywords" content="Blue Bell Ice Cream, ice cream, Brenham, Texas, homemade, Blue Bell, ice cream brand, little creamery" />
 <link href="css/styles.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="css/responsiveslides.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Quicksand:400,700" rel="stylesheet">
 
 <!--pulloutmenu-->
+    
+<!--not sure if this is necessary-->
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript --
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>-->
+    
     <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
     
   <!-- Latest compiled and minified CSS -->
@@ -39,10 +42,10 @@
     <!--trying out menu for mobile-->
 
     <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
-      <a class="navmenu-brand" href="#">Blue Bell</a>
+      <a class="navmenu-brand" href="index.html">Blue Bell</a>
       <ul class="nav navmenu-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="404.html">About</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Locations</a></li>
@@ -51,7 +54,7 @@
     </nav>
 
 	<button type="button" class="navbar-toggle btn btn-default btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas=	"body" aria-label="Hamburger Menu">
-  		<span><img class="ham" src="img/ham.png" alt="Hamburger Menu" /></span>
+  		<span><img class="ham" src="img/ham.gif" alt="Hamburger Menu" /></span>
 	</button>
 
   	<!--<button type="button" class="navbar-toggle btn btn-default btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body" aria-label="Hamburger Menu">
@@ -64,30 +67,37 @@
     
     <!--end mobile menu-->
     
+    <!--search field for desktop-->
+    <form class="search-container">
+    	<input type="text" id="search-bar" placeholder="Search bluebell.com">
+    	<a href="#"><img class="search-icon2" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  	</form>
+    
     <!--logo-->
-	<h1 id="logo"><a href="http://www.bluebell.com">Blue Bell Ice Cream</a></h1>
+	<h1 id="logo"><a href="index.html">Blue Bell Ice Cream</a></h1>
     
-    <!--search icon-->
-    <div class="search-icon"><img class="search-icon" src="img/search.png" alt="Search"/></div>
+    <!--search icon for tablet/mobile-->
+    <div class="search-icon"><img class="search-icon" src="img/search.gif" alt="Search"/></div>
     
+    <!--navigation bar-->
 	<div id="navigation">
 		<ul class="nav nav-inline">
-        <a href="http://www.bluebell.com" target="_blank" class="nav-link active">
+        <a href="index.html" class="nav-link active">
         	<li class="nav-item">Home</li>
         </a>
-		<a href="#">
+		<a href="404.html">
         	<li>About</li>
         </a>
-	    <a href="#">
+	    <a href="404.html">
         	<li>Products</li>
         </a>
-        <a href="#">
+        <a href="404.html">
         	<li>News</li>
         </a>
-        <a href="#">
+        <a href="404.html">
         	<li>Locations</li>
         </a>
-        <a href="#">
+        <a href="404.html">
         	<li>Contact</li>
         </a>
 		</ul>
@@ -97,16 +107,20 @@
 <div id="main">
     <div class="error">
     	<h2>Sorry! The page you're looking for does not exist!</h2>
+        <p>Go back to our <a href="index.html">home page</a>.</p>
     </div>
 </div>
+    
 <div id="footer">
 	<ul>
-	<li>About</li>
-	<li>Terms and Conditions</li>
-	<li>Jobs</li>
-	<li>Privacy</li>
+        <li><a href="404.html">About</a></li>
+        <li><a href="404.html">Terms and Conditions</a></li>
+        <li><a href="404.html">Jobs</a></li>
+        <li><a href="404.html">Privacy</a></li>
 	</ul>
 </div>
 </div>
 </body>
 </html>
+
+
