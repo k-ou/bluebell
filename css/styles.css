@@ -236,7 +236,7 @@ input#search-bar {
 /*#header {height: 282px; background:#CBBFA8; width:100%; padding-top: 10px;}*/
 
 #header {
-    height: 300px;
+    height: 210px;
     background: #FFFFFF;
     width: 100%;
     padding-top: 10px;
@@ -245,24 +245,26 @@ input#search-bar {
 #logo {
     width: 20%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     max-width: 220px;
+    height: 200px;
 }
 
 #navigation {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     background: #FFFFFF;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     width: 100%;
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
 #navigation li {
     display: block;
     float: left;
-    width: 16%;
+    width: 16.6%;
     font-size: 18px;
     text-align: center;
 }
@@ -320,7 +322,7 @@ input#search-bar {
 }
 
 #store {
-    background-image: url(../img/map.gif);
+    background-image: url(../img/map.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 10px;
@@ -347,10 +349,6 @@ input#search-bar {
     background: #F6EDAC;
 }
 
-.call {
-    height: inherit;
-}
-
 
 /*half screen width div*/
 
@@ -370,6 +368,10 @@ input#search-bar {
     margin-bottom: 1%;
     color: white;
     background-position: center;
+}
+
+#half h3 {
+    display: none;
 }
 
 #half img {
@@ -441,7 +443,7 @@ input#search-bar {
 }
 
 #footer ul {
-    width: 50%;
+    width: 60%;
     clear: both;
     margin: 0 auto;
 }
@@ -449,9 +451,59 @@ input#search-bar {
 #footer ul li {
     background: #FFFFFF;
     float: left;
-    height: 150px;
+    height: 120px;
     width: 25%;
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+#footer-bar {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+#social-media ul {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+}
+
+#social-media ul li {
+    float: left;
+    height: 40px;
+    width: 60px;
+}
+
+#social-media img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 30px;
+}
+
+#phone-number {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#phone-number p {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+
+#phone-number a {
+    text-decoration: none;
+    color: grey;
+}
+
+#phone-number a:hover {
+    text-decoration: none;
+    color: lightseagreen;
 }
 
 
@@ -490,17 +542,16 @@ input#search-bar {
         max-width: 1280px;
         min-width: 768px;
     }
-    #logo {
+    #logo a {
         background-image: url('../img/logo_big.gif');
         background-repeat: no-repeat;
+        background-position: bottom;
         background-size: 100%;
         display: block;
         width: 20%;
         min-width: 210px;
-        padding-top: 20px;
         text-indent: -9999px;
-        height: 220px;
-        background-position-y: 20px;
+        height: 200px;
     }
     button.menu {
         display: none;
@@ -511,6 +562,10 @@ input#search-bar {
     /*hamburger menu icon*/
     .ham {
         display: none;
+    }
+    
+    #myNavmenu {
+        display:none;
     }
     .media {
         max-height: 500px;
@@ -535,14 +590,15 @@ input#search-bar {
     #logo,
     h1#logo {
         background-image: url('../img/logo_med.gif');
+        background-repeat: no-repeat;
         background-size: 100%;
-        font-size: 2px;
         min-width: 110px;
         max-width: 120px;
-        background-repeat: no-repeat;
-        padding-top: 30%;
+    }
+    #logo a {
         text-indent: -9999px;
-        background-position-y: 0px;
+        display: block;
+        height: 115px;
     }
     /*navigation specs*/
     #navigation {
@@ -583,48 +639,13 @@ input#search-bar {
         margin-top: 30px;
         opacity: 0.9;
     }
+    /*#myNavmenu {
+        display:none;
+    }*/
     /*end nav*/
     .search-container {
         display: none;
     }
-    /*
-    #half {
-        z-index:1;
-        float: left;
-        position: absolute;
-        width:58%;
-        height:380px;
-    }
-    .quarter {
-        clear:both;
-        width: 30%;
-        padding:0;
-    }
-    #subscribe {
-        position:relative;
-        top: 100px;
-        margin: 0 auto;
-        padding-right: 0;
-        width:100%;
-    }
-    #store {
-        position:relative;
-        top: 335px;
-            left: 200px;
-        margin: 0 auto;
-        padding-right: 0;
-        width:100%;
-    }
-    .media {
-        z-index:1;
-        float: right;
-        position:absolute;
-        right:0;
-        margin-right:5%;
-        margin-top:0px;
-        width:30%;
-    }
-    */
     #half {
         /*width:60%;
         height:300px;*/
@@ -654,7 +675,7 @@ input#search-bar {
         width: 49%;
         height: 145px;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center;
     }
     #store {
         margin-right: 2%;
@@ -743,23 +764,66 @@ input#search-bar {
         height: 90px;
     }
     h1#logo {
-        background-image: url('../img/logo_sma.gif');
-        background-size: 100%;
-        width: 20%;
-        min-width: 20px;
-        max-width: 60px;
-        background-repeat: no-repeat;
-        padding-top: 20%;
+        padding-bottom: 80px;
+        padding-top: 10px;
         margin-top: 1%;
-        text-indent: -9999px;
-        height: 10px;
+        height: 40px;
         /*margin-left: 20%;*/
         float: left;
+    }
+    #logo a {
+        background-image: url('../img/logo_sma.gif');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-width: 20px;
+        max-width: 60px;
+        width: 100%;
+        text-indent: -9999px;
+        display: block;
+        height: 60px;
     }
     #navigation,
     .search-container {
         display: none;
     }
+    /*#myNavmenu {
+        display:none;
+    }*/
+    /*attempted mobile hamburger menu*/
+    .ham {
+        margin-top: 16px;
+        width: 80%;
+        float: left;
+    }
+    .navbar-toggle {
+        width: 15%;
+        height: auto;
+        float: left !important;
+        margin-left: 15px;
+        z-index: 1;
+        min-height: 50%;
+        line-height: 70%;
+    }
+    .glyphicon {
+        margin-top: 50%;
+        line-height: 70%;
+    }
+    .btn-default:hover,
+    .btn-default.focus,
+    .btn-default:focus {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    .search-icon {
+        min-width: 10px;
+        width: 28%;
+        float: right;
+        margin-right: 5%;
+        top: 0;
+        right: 0;
+        margin-top: 16px;
+    }
+    /*end mobile menu*/
     .quarter-right {
         display: none;
     }
@@ -772,7 +836,7 @@ input#search-bar {
         padding-bottom: 10%;
         height: 150px;
         padding-top: 10px;
-        background-position: bottom;
+        background-position: center;
     }
     #store input,
     #subscribe input {
@@ -826,53 +890,23 @@ input#search-bar {
         clear: both;
         padding: 0;
     }
+    #social-media ul li {
+        float: left;
+        height: 40px;
+        width: 60px;
+    }
+    #social-media img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 25px;
+    }
+    #phone-number p {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
     /*end footer specs*/
-    .search-icon {
-        min-width: 10px;
-        width: 28%;
-        float: right;
-        margin-right: 5%;
-        top: 0;
-        right: 0;
-        margin-top: 12px;
-    }
-    /*attempted mobile hamburger menu*/
-    .ham {
-        margin-top: 9px;
-        width: 80%;
-        float: left;
-    }
-    /*    .ham {
-        min-width: 30px;
-        width: 60%;
-        float: left;
-		margin-top: 30px;
-    }
-	.search-icon {
-		margin-top: 30px;
-		min-width: 30px;
-		width:20%;
-		float: left;
-	}*/
-    .navbar-toggle {
-        width: 15%;
-        height: auto;
-        float: left !important;
-        margin-left: 15px;
-        z-index: 1;
-        min-height: 50%;
-        line-height: 70%;
-    }
-    .glyphicon {
-        margin-top: 50%;
-        line-height: 70%;
-    }
-    .btn-default:hover,
-    .btn-default.focus,
-    .btn-default:focus {
-        background-color: transparent !important;
-        border-color: transparent !important;
-    }
     /*404 not found*/
     .error {
         width: 80%;
